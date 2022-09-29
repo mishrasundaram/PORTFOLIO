@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.clear {
+  clear: both;
+}
+
+.achievements {
+  position: relative;
+  width: auto;
+  height: auto;
+  left: 0px;
+  background-color: #1C1C1E;
+}
+
+.ach-heading {
+  font-size: 55px;
+  font-family: monospace;
+  color: #fff;
+  padding-left: 72px;
+  padding-top: 120px;
+}
+
+.ach-sub-heading {
+  color: rgba(255, 255, 255, 0.589);
+  font-family: monospace;
+  font-weight: 100;
+  font-style: italic;
+  margin-left: 72px;
+  font-size: 20px;
+}
+
+.ach-list {
+  float: left;
+  width: calc(100% / 2);
+  padding: 120px 72px;
+}
+
+.ach-img {
+  width: 100%;
+  height: 100%;
+}
+
+.ach-img:hover {
+  opacity: 0.7;
+}
+
+.ach-desc {
+  color: rgba(255, 255, 255, 0.589);
+  font-family: monospace;
+  text-align: center;
+  font-size: 16px;
+}
+
+#contact {
+  background-color: #1C1C1E;
+}
+
+.contact-section {
+  float: left;
+  padding: 100px 40px 100px 142px;
+  width: 50%;
+}
+
+.contact-heading {
+  font-size: 55px;
+  font-family: monospace;
+  color: #fff;
+}
+
+.contact-sub-heading {
+  font-family: monospace;
+  font-weight: 100;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.61);
+  font-size: 16px;
+}
+
+.contact-content {
+  float: left;
+  padding: 100px 182px 100px 10px;
+  width: 50%;
+}
+
+.contact-survey {
+  padding: 8px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form-survey {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(29, 29, 43, 0.863);
+  margin-top: 5px;
+  border: none;
+}
+
+.form-survey-mess {
+  height: 100px
+}
+
+.contact-btn {
+  margin-top: 8px;
+  background-color: rgba(82, 33, 230, 1);
+  color: #fff;
+}
+
+.contact-btn:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#footer {
+  background-color: rgba(24, 24, 35, 1);
+}
+
+.socials-list {
+  font-size: 40px;
+  text-align: center;
+  padding: 80px;
+  text-decoration: none;
+}
+
+.footer-icon {
+  color: rgba(255, 255, 255, 0.774);
+  margin: 6px;
+}
+
+.footer-icon:hover {
+  opacity: 0.6;
+}
+
+@media only screen and (max-width: 800px) {
+  .ach-heading {
+    font-size: 45px;
+    padding: 120px 72px 0 72px;
+  }
+
+  .ach-sub-heading {
+    font-size: 16px;
+    padding: 0 72px;
+    margin: 0;
+  }
+
+  .ach-list {
+    float: none;
+    width: 100%;
+  }
+
+  .contact-section {
+    float: none;
+    width: 100%;
+    padding: 120px 72px;
+  }
+
+  .contact-heading {
+    font-size: 45px;
+    text-align: center;
+  }
+
+  .contact-sub-heading {
+    text-align: center;
+    font-size: 16px;
+    padding: 0 50px;
+  }
+
+  .contact-content {
+    float: none;
+    width: 100%;
+    padding: 0 72px;
+  }
+}

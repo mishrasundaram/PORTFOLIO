@@ -1,0 +1,394 @@
+/* page setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.pgSetup {
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 72px;
+  margin: 0 auto;
+}
+
+/* End of page setting */
+/* The introduction part */
+#introBg {
+  background: linear-gradient(90deg, black 30%, #181823 30%);
+  scroll-behavior: smooth;
+}
+
+/* the navigation bar */
+/* reposition the navigation bar */
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leftOfNav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* make the navigation bar look thicker and decorate the text*/
+.pgLinks {
+  padding: 32px 24px;
+  text-decoration: none;
+  color: white;
+  font-family: 'Sen', sans-serif;
+  font-size: 16px;
+  transition: 1s all;
+  /*just add some effects when you hover the buttons*/
+}
+
+.pgLinks:hover {
+  background-color: rgba(231, 222, 222, 0.137);
+}
+
+/* make the contacts button have purple background and change color when mouse over it */
+.pgLinks:last-child {
+  background-color: #5221E6;
+}
+
+.pgLinks:nth-child(5):hover {
+  background-color: #7648fd;
+}
+
+/* Decorate the first button (the name) */
+#theName {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* end of the navigation bar */
+/* introduce-myself part */
+#myPicture {
+  background: url('demo-image-01.jpg') no-repeat left center;
+  background-size: 45%;
+  /* without this property, if the image is too big, it'll cover the whole width*/
+  min-height: 580px;
+  /* without this property, the image won't be fully displayed in terms of width, or vertically*/
+  /* the min-height: 580px here makes the div with id myPicture 550px tall (from the top of the image to the end of the black gray bg),
+    so the image lies within this div nicely */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* reposition the intro text */
+#introText {
+  margin-left: 40%;
+  margin-top: 15%;
+  text-align: justify;
+  /* display: flex;
+    flex-direction: column; */
+}
+
+/* decorate the text */
+#hello {
+  color: #fff;
+  font-size: 40px;
+  font-family: 'Sen', sans-serif;
+  padding: 10px 0px;
+  line-height: 1.5;
+}
+
+.grayText {
+  color: #c5bebe;
+  font-family: 'Sen', sans-serif;
+  padding: 5px 0px;
+  line-height: 1.5;
+  display: block;
+}
+
+/* end of the introduce-myself part */
+/* end of the introduction part */
+/* work-experience part */
+/* bg of the introduction part */
+.blackBg {
+  background: black;
+  min-height: 500px;
+  /*note this property when make the page responsive*/
+  scroll-behavior: smooth;
+}
+
+/* for the "work experience title" */
+#workExperience {
+  font-size: 35px;
+  color: #fff;
+  font-family: 'Sen', sans-serif;
+  padding: 100px 10px 20px;
+}
+
+/* each work place */
+#whereIWork {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+.eachWorkPlace {
+  padding: 0px 40px 0px 0px;
+}
+
+/* the appearance of the text in this section */
+.number {
+  font-size: 60px;
+  font-family: 'Sen', sans-serif;
+  color: #999;
+  padding: 10px 0px;
+  display: block;
+}
+
+.heading3 {
+  color: #fff;
+  font-family: 'Sen', sans-serif;
+  padding: 5px 10px 5px 0px;
+}
+
+#chessClub {
+  color: #3cc74e;
+}
+
+#istech {
+  color: #609bff
+}
+
+#fpt {
+  color: #e95d90;
+}
+
+.description {
+  color: #fff;
+  font-family: 'Sen', sans-serif;
+  font-size: 16px;
+  padding-top: 5px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* end of the work-experience part */
+.goTopContainer {
+  display: flex;
+  /* justify-content: flex-end; */
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 30px 50px;
+}
+
+.goTop {
+  width: 50px;
+  height: 50px;
+  background: url(backToTop.jpg) no-repeat top left;
+  background-color: rgb(238, 223, 223);
+  background-size: contain;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.goTopText {
+  text-decoration: none;
+  padding-top: 10px;
+  color: rgb(238, 223, 223);
+  font-family: 'Sen', sans-serif;
+  cursor: pointer;
+}
+
+/* make the page responsive */
+/* make the introduction part responsive at the width of 1033px*/
+@media (max-width: 1033px) {
+  #myPicture {
+    min-height: 450px;
+  }
+
+  #hello {
+    font-size: 35px;
+  }
+}
+
+/* end of responsive intro at 1033px*/
+/* make the navigation bar responsive */
+.burger {
+  display: none;
+  /*if you don't use this property, the menu will display in the desktop view. By doing this, it'll only display in the mobile view*/
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 2.5px;
+  background: rgb(233, 229, 229);
+  margin: 4.6px;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 950px) {
+
+  /* make responsive nav bar */
+  body {
+    overflow-x: hidden;
+    /*we don't need the horizontal scroll bar*/
+  }
+
+  #navBar {
+    background: #181823;
+    width: 100%;
+  }
+
+  .pgLinks:last-child {
+    background-color: #181823;
+  }
+
+  .pgLinks:nth-child(5):hover {
+    background-color: rgba(231, 222, 222, 0.137);
+  }
+
+  .pgLinks:hover {
+    /* box-sizing: border-box; */
+    border: 0.1px solid rgb(150, 139, 139);
+    /* border-color: rgb(255, 255, 255); */
+  }
+
+  .leftOfNav {
+    position: absolute;
+    right: 0px;
+    top: 83px;
+    background: #181823;
+    width: 50%;
+    height: 92vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* align-items: center; */
+    transform: translateX(100%);
+    /*move the whole container off the screen*/
+    transition: transform 0.5s ease-in;
+  }
+
+  /* will they still keep the responsive nav bar when i'm in mobile view? */
+  .leftOfNav a {
+    opacity: 0;
+  }
+
+  .burger {
+    display: block;
+    /* make the burger nav logo appear again */
+  }
+
+  @keyframes leftOfNavFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* end of the responsive nav bar */
+  /* make the introduction part responsive */
+  #introBg {
+    background: #181823;
+  }
+
+  #myPicture {
+    background: url('demo-image-01.jpg') no-repeat top;
+    background-size: 100%;
+    min-height: 580px;
+  }
+
+  #introText {
+    margin-left: 0px;
+    margin-top: 100%;
+    padding: 10px 0px 50px;
+  }
+
+  #hello {
+    font-size: 28px;
+    padding: 30px 0px 10px;
+  }
+
+  .grayText {
+    display: inline;
+    padding-bottom: 5px;
+  }
+
+  /* end of the responsive intro */
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+.nav-active a {
+  opacity: 1;
+}
+
+/* end of the responsive nav bar */
+/* make the work experience part responsive */
+@media (max-width: 950px) {
+  #whereIWork {
+    flex-direction: column;
+    padding-bottom: 50px;
+    /* margin-bottom: 30px; */
+  }
+
+  .eachWorkPlace {
+    padding-bottom: 40px;
+    padding-right: 0px;
+  }
+}
+
+/* end of responsive work experience part */
+/* Responsive mobile view */
+@media (max-width: 500px) {
+  .pgSetup {
+    padding: 0px;
+  }
+
+  /* the introduction part */
+  #myPicture {
+    background-size: 100%;
+  }
+
+  #introText {
+    margin: 100% 20px 20px;
+  }
+
+  #hello {
+    font-size: 30px;
+  }
+
+  /* the work experience part */
+  .blackBg {
+    padding: 0px 20px;
+  }
+
+  #workExperience {
+    font-size: 30px;
+  }
+}
+
+/* end of responsive mobile view */
+/* the end of responsive page */

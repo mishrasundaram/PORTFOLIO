@@ -1,0 +1,98 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapperChau{
+  width:100%;
+  padding:0 72px;
+  margin:0 auto;
+  max-width: 1920px;
+}
+
+
+#theDamnBg{
+  padding-top: 15px;
+  background-color: #1C1C1E;
+  height: 1700px;
+
+}
+
+.chauText{
+  color: #8491A0;
+  font-family: monospace;
+  font-style: italic;
+    
+}
+
+div.myprojects{
+  margin-top: 50px;
+  margin-left: 72px;
+  font-family: monospace;
+  font-size: 55px;
+  color: white;
+}
+
+div.gallery {
+  height: 450px;
+  margin-left: 72px;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border: 2px solid #3d3d58;
+  float: left;
+  width: 25%;
+  background-color: rgb(36, 35, 54);
+}
+  
+div.gallery:hover {
+  border: 2px solid rgb(43, 110, 165);
+}
+  
+div.gallery img {
+  width: 100%;
+  height: 300px;
+}
+  
+div.desc {
+  padding: 15px;
+  font-size: 18px;
+  text-align: center;
+  color: rgb(46, 44, 54);
+}
+
+div.skill{
+  margin-left: 72px;
+  margin-top: 50px;
+  width: 100%;
+  font-size: 55px;
+  font-family: monospace;
+  color:white;
+  float: left;
+}
+
+@media only screen and (max-width: 800px) {
+
+  div.myprojects{
+    font-size: 24px;
+  }
+
+  div.skill{
+    font-size: 24px;
+  }
+
+  div.gallery {
+    width: 70%;
+    height: 370px;
+  }
+
+  div.gallery img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .chauText{
+    font-size: 16px;
+  }
+}
