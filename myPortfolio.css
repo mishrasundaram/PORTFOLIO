@@ -389,6 +389,20 @@ html {
     font-size: 30px;
   }
 }
+.container {
+	 width:500px;
+}
 
+.imageclass {
+	 float:left;
+	 width:200px;
+	 height:20px;
+}
+
+.textclass {
+	 float:left;
+	 width:300px;
+	 height:20px;
+}
 /* end of responsive mobile view */
 /* the end of responsive page */
